@@ -1,0 +1,217 @@
+* {
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-style: normal;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+.article {
+  max-width: 784px;
+  padding: 48px;
+  border: 1px solid #DCE2E8;
+  margin: 80px 200px;
+}
+.article__header {
+  display: flex;
+  justify-content: space-between;
+}
+.article__header div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.article__header__remark {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #FFDD2D;
+  padding: 2px 10px;
+  display: inline-block;
+}
+.article__header__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px; 
+  color: #111111;
+  margin: 12px 0 40px;
+}
+.article__subject {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #808C9E;
+}
+.article__subject__hashtag {
+  list-style-type: none;
+  display: flex;
+  gap: 12px;
+}
+.article__subject__hashtag li {
+  background-color: #F1F3F5;
+}
+
+.article__subject__hashtag li a {
+  text-decoration: none;
+  color: #808C9E;
+}
+.article__subtitle {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  color: #333333;
+  margin: 48px 0 0;
+}
+.article__subtitle a {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  color: #597DB3;
+  border-bottom: 1px solid #D6E2FC;
+  text-decoration: none;
+}
+.article__subtitle a:hover{
+  color: #C02648;
+  border-bottom: 1px solid #F8E8E5;
+}
+.article__subtitle a:active{
+  color: #597DB3;
+  border-bottom: 1px solid #D6E2FC;
+}
+
+.article__content {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #333333;
+  margin: 16px 0 0;
+}
+
+.article__content__advantages, .article__content__tasks {
+  list-style-type: none;
+} 
+.article__footer {
+ margin-top: 30px;
+}
+.article__footer__auth {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 48px;
+} 
+.article__footer__auth p {
+  max-width: 208px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #808C9E;
+
+}
+.article__footer__auth p strong {
+  display: block;
+  font-weight: 700;
+  color: #333333;
+}
+.article__footer__redactor {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #808C9E;
+}
+.article__footer__redactor a {
+  text-decoration: none;
+  color: #597DB3;
+  border-bottom: 1px solid #D6E2FC;
+}
+
+.article__footer__redactor a:hover{
+  color: #C02648;
+  border-bottom: 1px solid #F8E8E5;
+}
+.article__footer__redactor a:active{
+  color: #597DB3;
+  border-bottom: 1px solid #D6E2FC;
+}
+@media (max-width: 1310px) {
+  .article {
+    margin: 80px;
+  }
+  .article__header {
+    font-size: 24px;
+  }
+  .article__subject {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .article__subtitle, .article__subtitle a {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .article__content {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .article__content {
+    margin: 12px 0 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .article__subject p {
+    margin-bottom: 8px;
+  }
+  .article__subject__hashtag {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 670px) {
+  .article {
+    margin: 80px 16px;
+    padding: 24px 24px 36px;
+  }
+  .article__header {
+    flex-direction: column;
+    gap: 12px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .article__header__remark {
+    margin-bottom: 16px;
+    align-self: flex-start;
+  }
+  .article__header div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .article__subject__hashtag {
+    gap: 12px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .article__subtitle {
+    margin: 36px 0 0;
+  }
+  .article__footer {
+    margin-top: 28px;
+   }
+   .article__footer__auth {
+    margin-bottom: 36px;
+  } 
+  .article__footer__redactor {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .article__footer__redactor a {
+    align-self: flex-start;
+  }
+}
